@@ -249,7 +249,7 @@ section h3 {
    Seção Sobre Mim
 ==================== */
 #about {
-  background: var(--primary);
+  background: #1F2233;
 }
 .about p {
   font-size: 20px;
@@ -266,7 +266,7 @@ section h3 {
   gap: 20px;
 }
 .skill {
-  background: var(--secondary);
+  background: #35394D;
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 200px;
@@ -276,6 +276,7 @@ section h3 {
 .skill h3 {
   margin-bottom: 10px;
   font-size: 22px;
+   color:white;
 }
 
 /* ====================
@@ -293,13 +294,13 @@ section h3 {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--secondary);
+  background: #35394D;
 }
 .experience-item {
   position: relative;
   width: 45%;
   padding: 20px;
-  background: var(--secondary);
+  background:#35394D ;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   margin: 20px 0;
@@ -320,8 +321,8 @@ section h3 {
   top: 20px;
   width: 16px;
   height: 16px;
-  background: var(--primary);
-  border: 3px solid var(--text-light);
+  background: #1F2233;
+  border: 3px solid #F0F0F0;
   border-radius: 50%;
   z-index: 1;
 }
@@ -362,12 +363,12 @@ section h3 {
   margin-bottom: 20px;
   border: none;
   border-radius: 4px;
-  background: var(--secondary);
-  color: var(--text-light);
+  background: #35394D;
+  color: #F0F0F0;
 }
 .contact button {
-  background: var(--secondary);
-  color: var(--text-light);
+  background: #35394D;
+  color: #F0F0F0;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -376,7 +377,7 @@ section h3 {
   font-size: 16px;
 }
 .contact button:hover {
-  background: var(--tertiary);
+  background: #4B4F61;
 }
 #contact {
   margin-top: 600px;
