@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-st">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="todo nosso.png" type="image/x-icon">
+    <link rel="stylesheet" href="prot.css">
+    <title>Portifolio</title>
+</head>
+<body>
+     
+        <main id="home" class="">
+    <header > 
+        <h1 id="n" >N</h1>
+        <h1  id="eto">ETO.HX</h1>
+        <nav>
+           
+            <ul>
+                <a class="ver" href=""><il>Home</il> </a> 
+                <a href="#about">About<il></il> </a>
+                <a href="#skills"><il>Services</il> </a>
+                <a href="#projects"><il>Projects</il> </a>
+                <a href="#experience"><il>experience</il> </a>
+                <a href="#"><il>Blog</il> </a>
+               
+                <div id="con"><a class="ver" href="#contact"><il>Contact me</il> </a></div>
+                
+            </ul> 
+        </nav>
+    </header>
+   <section>
+    <div id="eu" class="reveal">
+        <img id="euk" src="Imagem WhatsApp 2025-02-09 às 16.22.17_10853cabkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.jpg" alt="">
+    </div>
+<h1 id="ja" class="reveal">GELSON NETO</h1>
+<P class="reveal">A CREATIVE LAZY KID AND VERY VERY STUPID NIGGER</P>
+</section>
+
+</main>
+    
+  <div class="container">
+    <!-- Sobre Mim -->
+    <section id="about" class="about">
+      <h2>Sobre Mim</h2>
+      <div class="card reveal">
+        <p>
+          Eu sou atualmente um estudante do ensino medio, com 17 , conheci a programação os 14 mas comecei de fato a programa aos 15, dai venho realizando varios projecto seja para cliente ou pessoas...
+          Com apenas 2 anos de experiência, desenvolvo soluções inovadoras, que transformam ideias em realidade. 
+        </p>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+      <h2>Habilidades</h2>
+      <div class="skills-list reveal">
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>Intermedio</p>
+        </div>
+        <div class="skill">
+          <h3>Python</h3>
+          <p>Intermedio</p>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <p>Avançado</p>
+        </div>
+        <div class="skill">
+          <h3>SQL</h3>
+          <p>Avançado</p>
+        </div>
+       
+
+        <div class="skill">
+          <h3>React.js</h3>
+          <p>Intermedio</p>
+        </div>
+
+
+        <div class="skill">
+          <h3>html</h3>
+          <p>Avançado</p>
+        </div>
+       
+      </div>
+    </section>
+
+  
+    
+    <!-- Projetos -->
+    <section id="projects" class="projects">
+      <h2>Projetos</h2>
+      <section class="reveal">
+        <div class="carousel">
+          <!-- Botão para o slide anterior -->
+          <button class="carousel-button prev">&#10094;</button>
+          <!-- Container que exibe os slides -->
+          <div class="carousel-track-container">
+            <ul class="carousel-track">
+              <!-- Slide 1 -->
+              <li class="carousel-slide">
+                <div class="project" onclick="openSubPage('subpage1')">
+                  <img src="pro1/Captura de ecrã 2024-11-19 221326.png" alt="Projeto 1">
+                  <div class="project-content">
+                    <h3>Projeto 1</h3>
+                    <p>Um website de vendas, com interface para produtos...</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Slide 2 -->
+              <li class="carousel-slide">
+                <div class="project" onclick="openSubPage('subpage2')">
+                  <img src="pro2/Captura de ecrã 2025-02-10 194351.png" alt="Projeto 2">
+                  <div class="project-content">
+                    <h3>Projeto 2</h3>
+                    <p>Um projeto escola, sobre a personalidade de bento jesus caraça.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Slide 3 -->
+              <li class="carousel-slide">
+                <div class="project" onclick="openSubPage('subpage3')">
+                  <img src="pro3/Captura de ecrã 2025-02-10 202219.png" alt="Projeto 3">
+                  <div class="project-content">
+                    <h3>Projeto 3</h3>
+                    <p>Sistema corporativo integrado para gerenciamento de recursos.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Slide 4 -->
+              <li class="carousel-slide">
+                <div class="project" onclick="openSubPage('subpage4')">
+                  <img src="pro4/Captura de ecrã 2025-02-10 203812.png" alt="Projeto 4">
+                  <div class="project-content">
+                    <h3>Projeto 4</h3>
+                    <p>Descrição do Projeto 4.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Botão para o próximo slide -->
+          <button class="carousel-button next">&#10095;</button>
+        </div>
+      </section>
+    </section>
+  
+    <!-- Subpágina para Projeto 1 -->
+    <div id="subpage1" class="subpage">
+      <button class="close-button" onclick="closeSubPage('subpage1')">X</button>
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="prevSlide('carousel1')">&#10094;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carousel1">
+            <li class="carousel-slide active">
+              <img  class="cap" src="pro1/Captura de ecrã 2024-11-19 221111.png" alt="Slide 1 - Projeto 1">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap" src="pro1/Captura de ecrã 2024-11-19 221202.png" alt="Slide 2 - Projeto 1">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap"  src="pro1/Captura de ecrã 2024-11-19 221326.png" alt="Slide 3 - Projeto 1">
+
+            </li> <li class="carousel-slide">
+              <img class="cap"   src="pro1/Captura de ecrã 2024-12-02 113813.png" alt="Slide 4 - Projeto 1">
+            </li>
+          </ul>
+          <p class="lor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quis autem minus eligendi aperiam ipsa nihil ea, et unde, nemo velit, omnis quibusdam eveniet pariatur qui consectetur possimus nam reiciendis!</p>
+        </div>
+        <button class="carousel-button next" onclick="nextSlide('carousel1')">&#10095;</button>
+      </div>
+    </div>
+  
+    <!-- Subpágina para Projeto 2 -->
+    <div id="subpage2" class="subpage">
+      <button class="close-button" onclick="closeSubPage('subpage2')">X</button>
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="prevSlide('carousel2')">&#10094;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carousel2">
+            <li class="carousel-slide active">
+              <img class="cap" src="pro2/Captura de ecrã 2025-02-10 194351.png" alt="Slide 1 - Projeto 2">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap"src="pro2/Captura de ecrã 2025-02-10 194351.png" alt="Slide 2 - Projeto 2">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap"src="pro2/Captura de ecrã 2025-02-10 194351.png" alt="Slide 3 - Projeto 2">
+            </li> 
+            <li class="carousel-slide">
+              <img class="cap" src="pro2/Captura de ecrã 2025-02-10 194351.png" alt="Slide 4 - Projeto 2">
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-button next" onclick="nextSlide('carousel2')">&#10095;</button>
+      </div>
+    </div>
+  
+    <!-- Subpágina para Projeto 3 -->
+    <div id="subpage3" class="subpage">
+      <button class="close-button" onclick="closeSubPage('subpage3')">X</button>
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="prevSlide('carousel3')">&#10094;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carousel3">
+            <li class="carousel-slide active">
+              <img   class="cap" src="pro3/Captura de ecrã 2025-02-10 202219.png" alt="Slide 1 - Projeto 3">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap"src="pro3/Captura de ecrã 2025-02-10 202239.png" alt="Slide 2 - Projeto 3">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap"src="pro3/Captura de ecrã 2025-02-10 202308.png" alt="Slide 3 - Projeto 3">
+            </li>~
+             <li class="carousel-slide">
+              <img class="cap" src="pro3/Captura de ecrã 2025-02-10 202329.png" alt="Slide 4 - Projeto 3">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap"src="pro3/Captura de ecrã 2025-02-10 202351.png" alt="Slide 5 - Projeto 3">
+            </li>
+            <li class="carousel-slide">
+              <img  class="cap"src="pro3/Captura de ecrã 2025-02-10 202410.png" alt="Slide 6 - Projeto 3">
+            </li>
+            <li class="carousel-slide">
+              <img src="pro3/Captura de ecrã 2025-02-10 202431.png" alt="Slide 7 - Projeto 3">
+             
+              </li> 
+              <li class="carousel-slide">
+                <img  class="cap"src="pro3/Captura de ecrã 2025-02-10 202457.png" alt="Slide 8 - Projeto 3">
+              
+            </li> <li class="carousel-slide">
+                <img class="cap" src="pro3/Captura de ecrã 2025-02-10 202516.png" alt="Slide 3 - Projeto 9">
+              </li>
+              <li class="carousel-slide">
+                <img  class="cap"src="pro3/Captura de ecrã 2025-02-10 202554.png" alt="Slide 3 - Projeto 3">
+              </li>
+          </ul>
+        </div>
+        <button class="carousel-button next" onclick="nextSlide('carousel3')">&#10095;</button>
+      </div>
+    </div>
+  
+    <!-- Subpágina para Projeto 4 -->
+    <div id="subpage4" class="subpage">
+      <button class="close-button" onclick="closeSubPage('subpage4')">X</button>
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="prevSlide('carousel4')">&#10094;</button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carousel4">
+            <li class="carousel-slide active">
+              <img class="cap" src="pro4/Captura de ecrã 2025-02-10 203812.png" alt="Slide 1 - Projeto 4">
+            </li>
+            <li class="carousel-slide">
+              <img class="cap" src="pro4/Captura de ecrã 2025-02-10 205331.png" alt="Slide 2 - Projeto 4">
+            </li>
+          
+          </ul>
+        </div>
+        <button class="carousel-button next" onclick="nextSlide('carousel4')">&#10095;</button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.querySelector('.carousel-button.next');
+        const prevButton = document.querySelector('.carousel-button.prev');
+        const container = document.querySelector('.carousel-track-container');
+        let currentSlide = 0;
+  
+        // Clonar os primeiros e últimos slides para criar o efeito de loop infinito
+        const firstClone = slides[0].cloneNode(true);
+        const lastClone = slides[slides.length - 1].cloneNode(true);
+        track.appendChild(firstClone);
+        track.insertBefore(lastClone, slides[0]);
+  
+        // Atualizar a lista de slides após a clonagem
+        const updatedSlides = Array.from(track.children);
+  
+        // Função que atualiza o carrossel: centraliza o slide ativo e atualiza as opacidades
+        function updateCarousel() {
+          const containerWidth = container.getBoundingClientRect().width;
+          const slideWidth = updatedSlides[0].getBoundingClientRect().width;
+          const effectiveSlideWidth = slideWidth + 10; // 50px de margem total
+          const offset = currentSlide * effectiveSlideWidth - (containerWidth - slideWidth * 3) / 3;
+          track.style.transform = 'translateX(-' + offset + 'px)';
+  
+          updatedSlides.forEach((slide, index) => {
+            slide.classList.toggle('active', index === currentSlide || index === currentSlide + 1);
+          });
+        }
+  
+        // Função para ir para o próximo slide (loop infinito)
+        nextButton.addEventListener('click', function() {
+          currentSlide++;
+          if (currentSlide >= updatedSlides.length - 1) {
+            currentSlide = 1;
+            track.style.transition = 'none';
+            updateCarousel();
+            setTimeout(() => {
+              track.style.transition = 'transform 0.5s ease-in-out';
+              currentSlide++;
+              updateCarousel();
+            }, 50);
+          } else {
+            updateCarousel();
+          }
+        });
+  
+        // Função para ir para o slide anterior (loop infinito)
+        prevButton.addEventListener('click', function() {
+          currentSlide--;
+          if (currentSlide < 0) {
+            currentSlide = updatedSlides.length - 2;
+            track.style.transition = 'none';
+            updateCarousel();
+            setTimeout(() => {
+              track.style.transition = 'transform 0.5s ease-in-out';
+              currentSlide--;
+              updateCarousel();
+            }, 50);
+          } else {
+            updateCarousel();
+          }
+        });
+  
+        // Recalcula o posicionamento ao redimensionar a janela
+        window.addEventListener('resize', updateCarousel);
+  
+        // Inicializa o carrossel
+        updateCarousel();
+      });
+    </script>
+<script>
+  // Funções para exibir/ocultar subpáginas
+  function openSubPage(id) {
+    document.querySelectorAll(".subpage").forEach(function(page) {
+      page.style.display = "none";
+    });
+    document.getElementById(id).style.display = "block";
+  }
+  function closeSubPage(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  // Funções para navegação dos carrosseis das subpáginas
+  function nextSlide(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    let currentIndex = 0;
+    slides.forEach(function(slide, index) {
+      if (slide.classList.contains('active')) {
+        currentIndex = index;
+      }
+    });
+    slides[currentIndex].classList.remove('active');
+    let nextIndex = (currentIndex + 1) % slides.length;
+    slides[nextIndex].classList.add('active');
+  }
+  function prevSlide(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    let currentIndex = 0;
+    slides.forEach(function(slide, index) {
+      if (slide.classList.contains('active')) {
+        currentIndex = index;
+      }
+    });
+    slides[currentIndex].classList.remove('active');
+    let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+    slides[prevIndex].classList.add('active');
+  }
+</script>
+    <!-- Experiência -->
+    <section id="experience" class="experience">
+      <h2>Experiência</h2>
+      <div class="experience-timeline reveal">
+        <div class="experience-item">
+          <h3>2023 - Presente</h3>
+          <h4>Empresa XYZ</h4>
+          <p>Desenvolvedor Full Stack em projetos de alta performance, liderando equipes e implementando soluções inovadoras.</p>
+        </div>
+        <div class="experience-item">
+          <h3> - 2020</h3>
+          <h4>Empresa ABC</h4>
+          <p>Engenheiro de Software responsável pelo desenvolvimento e manutenção de sistemas críticos para grandes clientes.</p>
+        </div>
+        <div class="experience-item">
+          <h3>2024 - 2025</h3>
+          <h4>Startup crasoft</h4>
+          <p>Participação no desenvolvimento de uma plataforma inovadora, contribuindo para o crescimento e sucesso da empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+      <h2>Contato</h2>
+      <div class="card reveal">
+        <form action="#" method="post">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Seu email" required>
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Reformulado -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>Sobre</h3>
+        <ul>
+          <li><a href="#about">Quem Sou</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Desenvolvimento Web</a></li>
+          <li><a href="#projects">Consultoria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="#contact">Fale Conosco</a></li>
+          <li><a href="mailto:">Email:sequeira.hx@gmail.com</a></li>
+          <li><a href="tel:+351963696998">Tel: (351) 963696998</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@Se-li" target="_blank">
+        <img src="youtube.svg" alt="Youtube" ></a>
+
+        <a href="https://github.com/riboque" target="_blank"><img src="github.svg" alt="Instagram"></a>
+
+      <a href="https://www.linkedin.com/in/gelson-sequeira-04333b343/" target="_blank" ><img src="linkedin.svg"  alt="LinkedIn"></a>
+    </div>
+    <p>© 2025 Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Script para animação sequencial: apenas elementos dentro das section -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Seleciona apenas os elementos com classe "reveal" que estão dentro de uma section
+      const reveals = document.querySelectorAll('section .reveal');
+      
+      // Atribui um índice a cada elemento para calcular o delay
+      reveals.forEach((el, index) => {
+        el.dataset.index = index;
+      });
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const delay = entry.target.dataset.index * 150;
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('visible');
+            }, delay);
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+  
+      reveals.forEach(el => observer.observe(el));
+    });
+  </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const track = document.querySelector('.carousel-track');
+          const slides = Array.from(track.children);
+          const nextButton = document.querySelector('.carousel-button.next');
+          const prevButton = document.querySelector('.carousel-button.prev');
+          const container = document.querySelector('.carousel-track-container');
+          let currentSlide = 0;
+    
+          // Clonar os primeiros e últimos slides para criar o efeito de loop infinito
+          const firstClone = slides[0].cloneNode(true);
+          const lastClone = slides[slides.length - 1].cloneNode(true);
+          track.appendChild(firstClone);
+          track.insertBefore(lastClone, slides[0]);
+    
+          // Atualizar a lista de slides após a clonagem
+          const updatedSlides = Array.from(track.children);
+    
+          // Função que atualiza o carrossel: centraliza o slide ativo e atualiza as opacidades
+          function updateCarousel() {
+            const containerWidth = container.getBoundingClientRect().width;
+            const slideWidth = updatedSlides[0].getBoundingClientRect().width;
+            const effectiveSlideWidth = slideWidth + 10; // 50px de margem total
+            const offset = currentSlide * effectiveSlideWidth - (containerWidth - slideWidth * 3) / 3;
+            track.style.transform = 'translateX(-' + offset + 'px)';
+    
+            updatedSlides.forEach((slide, index) => {
+              slide.classList.toggle('active', index === currentSlide || index === currentSlide + 1);
+            });
+          }
+    
+          // Função para ir para o próximo slide (loop infinito)
+          nextButton.addEventListener('click', function() {
+            currentSlide++;
+            if (currentSlide >= updatedSlides.length - 1) {
+              currentSlide = 1;
+              track.style.transition = 'none';
+              updateCarousel();
+              setTimeout(() => {
+                track.style.transition = 'transform 0.5s ease-in-out';
+                currentSlide++;
+                updateCarousel();
+              }, 50);
+            } else {
+              updateCarousel();
+            }
+          });
+    
+          // Função para ir para o slide anterior (loop infinito)
+          prevButton.addEventListener('click', function() {
+            currentSlide--;
+            if (currentSlide < 0) {
+              currentSlide = updatedSlides.length - 2;
+              track.style.transition = 'none';
+              updateCarousel();
+              setTimeout(() => {
+                track.style.transition = 'transform 0.5s ease-in-out';
+                currentSlide--;
+                updateCarousel();
+              }, 50);
+            } else {
+              updateCarousel();
+            }
+          });
+    
+          // Recalcula o posicionamento ao redimensionar a janela
+          window.addEventListener('resize', updateCarousel);
+    
+          // Inicializa o carrossel
+          updateCarousel();
+        });
+      </script>
+</body>
+</html>

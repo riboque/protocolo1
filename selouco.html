@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio do Programador</title>
+  <style>
+    /* Paleta monocromática baseada em #1F2233 */
+    :root {
+      --primary: #1F2233;      /* Cor base */
+      --secondary: #35394D;    /* Tom intermediário */
+      --tertiary: #4B4F61;     /* Tom mais claro */
+      --text-light: #F0F0F0;    /* Texto claro para fundos escuros */
+    }
+    /* Reset e configurações básicas */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: var(--primary);
+      font-family: Arial, sans-serif;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    a {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: var(--secondary);
+    }
+    /* Header Moderno */
+    header {
+      background: var(--primary);
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    header nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    header nav a {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+    }
+    header nav a:hover {
+      background: var(--secondary);
+      border-radius: 4px;
+    }
+    /* Seção Hero com gradiente */
+    .hero {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 24px;
+    }
+    /* Container centralizado */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    /* Títulos de seção */
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 36px;
+      border-bottom: 2px solid var(--secondary);
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    /* Cards para seções internas */
+    .card {
+      background: var(--tertiary);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      margin-bottom: 20px;
+    }
+    /* Seção Sobre Mim */
+    .about p {
+      font-size: 20px;
+      text-align: center;
+    }
+    /* Seção Habilidades */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .skill {
+      background: var(--secondary);
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 200px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+    .skill h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+    /* Seção Projetos */
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .project {
+      background: var(--secondary);
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+    .project img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-content {
+      padding: 15px;
+    }
+    .project-content h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    /* Seção Experiência – Timeline */
+    .experience-timeline {
+      position: relative;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    .experience-timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--secondary);
+    }
+    .experience-item {
+      position: relative;
+      width: 45%;
+      padding: 20px;
+      background: var(--secondary);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      margin: 20px 0;
+    }
+    .experience-item:nth-child(odd) {
+      float: left;
+      clear: both;
+      text-align: right;
+    }
+    .experience-item:nth-child(even) {
+      float: right;
+      clear: both;
+      text-align: left;
+    }
+    .experience-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 16px;
+      height: 16px;
+      background: var(--primary);
+      border: 3px solid var(--text-light);
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .experience-item:nth-child(odd)::before {
+      right: -8px;
+    }
+    .experience-item:nth-child(even)::before {
+      left: -8px;
+    }
+    .experience-item h3 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+    .experience-item h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .experience-item p {
+      font-size: 16px;
+    }
+    /* Seção Contato */
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      
+    }
+    .contact label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 4px;
+      background: var(--secondary);
+      color: var(--text-light);
+    }
+    .contact button {
+      background: var(--secondary);
+      color: var(--text-light);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 16px;
+    }
+    .contact button:hover {
+      background: var(--tertiary);
+    }
+    #contact{
+        margin-top: 600px;
+    }
+    /* Footer Reformulado e Moderno */
+    footer {
+      background: var(--primary);
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+    footer .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+    footer .footer-top div {
+      flex: 1 1 200px;
+    }
+    footer h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li {
+      margin: 8px 0;
+    }
+    footer .social-icons {
+      margin-bottom: 20px;
+    }
+    footer .social-icons img {
+      width: 32px;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+    footer .social-icons img:hover {
+      transform: scale(1.1);
+    }
+    footer p {
+      font-size: 14px;
+    }
+    /* Efeitos de Animação: os elementos serão animados de baixo para cima */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header nav {
+        flex-direction: column;
+      }
+      .experience-item {
+        width: 100%;
+        float: none;
+        text-align: left;
+      }
+      .experience-timeline::before {
+        left: 20px;
+      }
+      .experience-item:nth-child(odd)::before, 
+      .experience-item:nth-child(even)::before {
+        left: 12px;
+      }
+      footer .footer-top {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Moderno -->
+  <header>
+    <nav>
+      <a href="#hero">Início</a>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Projetos</a>
+      <a href="#experience">Experiência</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Seção Hero -->
+  <section class="hero" id="hero">
+    <div class="container reveal">
+      <h1>Olá, eu sou [Seu Nome]</h1>
+      <p>Programador Full Stack com 10 anos de experiência</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Sobre Mim -->
+    <section id="about" class="about">
+      <h2>Sobre Mim</h2>
+      <div class="card reveal">
+        <p>
+          Com 10 anos de experiência, desenvolvo soluções inovadoras e robustas que transformam ideias em realidade. Minha paixão pela programação e atenção aos detalhes garantem resultados de excelência.
+        </p>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+      <h2>Habilidades</h2>
+      <div class="skills-list reveal">
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <p>Avançado</p>
+        </div>
+        <div class="skill">
+          <h3>Python</h3>
+          <p>Avançado</p>
+        </div>
+        <div class="skill">
+          <h3>Java</h3>
+          <p>Intermediário</p>
+        </div>
+        <div class="skill">
+          <h3>React</h3>
+          <p>Avançado</p>
+        </div>
+        <div class="skill">
+          <h3>Node.js</h3>
+          <p>Avançado</p>
+        </div>
+        <div class="skill">
+          <h3>Django</h3>
+          <p>Avançado</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="projects">
+      <h2>Projetos</h2>
+      <div class="projects-grid reveal">
+        <div class="project">
+          <img src="20100923-Capitol-Sunset.jpg" alt="Projeto 1">
+          <div class="project-content">
+            <h3>Projeto 1</h3>
+            <p>Aplicação web robusta para gestão de tarefas e equipes.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="d98e30ae-dfd1-43a3-9d82-2732144d96e1_lg-removebg-preview.png" alt="Projeto 2">
+          <div class="project-content">
+            <h3>Projeto 2</h3>
+            <p>Plataforma de e-commerce escalável com integração de pagamentos.</p>
+          </div>
+        </div>
+        <div class="project">
+          <img src="Imagem WhatsApp 2025-02-09 às 16.20.39_b2bdcae4çççççççççççççççççççççççççççççççççççç.jpg" alt="Projeto 3">
+          <div class="project-content">
+            <h3>Projeto 3</h3>
+            <p>Sistema corporativo integrado para gerenciamento de recursos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experience" class="experience">
+      <h2>Experiência</h2>
+      <div class="experience-timeline reveal">
+        <div class="experience-item">
+          <h3>2020 - Presente</h3>
+          <h4>Empresa XYZ</h4>
+          <p>Desenvolvedor Full Stack em projetos de alta performance, liderando equipes e implementando soluções inovadoras.</p>
+        </div>
+        <div class="experience-item">
+          <h3>2015 - 2020</h3>
+          <h4>Empresa ABC</h4>
+          <p>Engenheiro de Software responsável pelo desenvolvimento e manutenção de sistemas críticos para grandes clientes.</p>
+        </div>
+        <div class="experience-item">
+          <h3>2012 - 2015</h3>
+          <h4>Startup 123</h4>
+          <p>Participação no desenvolvimento de uma plataforma inovadora, contribuindo para o crescimento e sucesso da empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+      <h2>Contato</h2>
+      <div class="card reveal">
+        <form action="#" method="post">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Seu email" required>
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Reformulado -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <h3>Sobre</h3>
+        <ul>
+          <li><a href="#about">Quem Sou</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <ul>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Desenvolvimento Web</a></li>
+          <li><a href="#projects">Consultoria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="#contact">Fale Conosco</a></li>
+          <li><a href="mailto:contato@exemplo.com">Email: contato@exemplo.com</a></li>
+          <li><a href="tel:+551112345678">Tel: (11) 1234-5678</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+    </div>
+    <p>© 2025 Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Script para animação sequencial: apenas elementos dentro das section -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Seleciona apenas os elementos com classe "reveal" que estão dentro de uma section
+      const reveals = document.querySelectorAll('section .reveal');
+      
+      // Atribui um índice a cada elemento para calcular o delay
+      reveals.forEach((el, index) => {
+        el.dataset.index = index;
+      });
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const delay = entry.target.dataset.index * 150;
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('visible');
+            }, delay);
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+  
+      reveals.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* ====================
+   Reset e Configurações Globais
+==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #1F2233;
+  font-family: "Lato", sans-serif;
+}
+
+/* ====================
+   Header, Identidades e Navegação
+==================== */
+#eto {
+  color: rgb(176, 41, 41);
+  text-align: center;
+  font-size: 2em;
+  margin-right: 1210px;
+  margin-top: 20.6px;
+font-family: "Grechen Fuemen";
+  transform: translate(15%, -20%);
+
+}
+
+#n {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2em;
+  margin-right: 1350px;
+  font-family: "Grechen Fuemen";
+  transform: translate(100%, 130%);
+}
+
+#con {
+  width: 120px;
+  height: 30px;
+  border: 1px solid rgb(176, 41, 41);
+  text-align: center;
+  margin-top: -25px;
+  margin-left: 600px;
+  align-items: center;
+}
+
+nav {
+  margin-top: 30px;
+}
+nav ul {
+  padding-left: 700px;
+  margin-top: -55px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+}
+a li {
+  font-size: 1.5em;
+}
+.ver {
+  color: rgb(176, 41, 41);
+  text-align: center;
+  margin-top: 40px;
+}
+
+header {
+ position: fixed;
+ margin-top: -20px;
+}
+/* ====================
+   Seção Home e Sobreposição
+==================== */
+#home {
+  background-image: url(montanha.jpg);
+  width: 100%;
+  height: 101vh;
+  background-size:cover ;
+    
+
+}
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ====================
+   Perfil e Apresentação
+==================== */
+#eu {
+  border-radius: 50%;
+  width: 250px;
+  height: 200px;
+  margin-left: 650px;
+  margin-top: 0px;
+}
+#euk {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: 150px;
+}
+#ja {
+  color: rgb(176, 41, 41);
+  text-align: center;
+  padding: 0;
+  font-size: 3em;
+  font-weight: 900;
+  margin-top: 150px;
+}
+p {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+/* ====================
+   Carousel e Projetos
+==================== */
+:root {
+  --primary: #1F2233;
+  --secondary: #35394D;
+  --tertiary: #4B4F61;
+  --text-light: #F0F0F0;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel-track-container {
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-slide {
+  min-width: 35%;
+  margin: 0 5px; /* Espaçamento entre slides */
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.carousel-slide.active {
+  opacity: 1;
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel-button.prev {
+  left: 10px;
+}
+.carousel-button.next {
+  right: 10px;
+}
+
+/* ====================
+   Projetos e Cards
+==================== */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.project {
+  background: var(--secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  margin: 20px auto;
+  text-align: center;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-content {
+  padding: 15px;
+}
+.project-content h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* ====================
+   Container Geral e Seções
+==================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--primary);
+  padding: 40px 20px;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  border-bottom: 2px solid var(--secondary);
+  display: inline-block;
+  padding-bottom: 10px;
+  color: white;
+}
+section h3 {
+    color: white;}
+    section h4{
+        color: white;}
+.card {
+  background: var(--tertiary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+
+/* ====================
+   Seção Sobre Mim
+==================== */
+#about {
+  background: var(--primary);
+}
+.about p {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ====================
+   Seção Habilidades
+==================== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.skill {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+.skill h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+/* ====================
+   Experiência – Timeline
+==================== */
+.experience-timeline {
+  position: relative;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--secondary);
+}
+.experience-item {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background: var(--secondary);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  margin: 20px 0;
+}
+.experience-item:nth-child(odd) {
+  float: left;
+  clear: both;
+  text-align: right;
+}
+.experience-item:nth-child(even) {
+  float: right;
+  clear: both;
+  text-align: left;
+}
+.experience-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: var(--primary);
+  border: 3px solid var(--text-light);
+  border-radius: 50%;
+  z-index: 1;
+}
+.experience-item:nth-child(odd)::before {
+  right: -8px;
+}
+.experience-item:nth-child(even)::before {
+  left: -8px;
+}
+.experience-item h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.experience-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.experience-item p {
+  font-size: 16px;
+}
+
+/* ====================
+   Seção Contato
+==================== */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background: var(--secondary);
+  color: var(--text-light);
+}
+.contact button {
+  background: var(--secondary);
+  color: var(--text-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+.contact button:hover {
+  background: var(--tertiary);
+}
+#contact {
+  margin-top: 600px;
+}
+
+/* ====================
+   Footer
+==================== */
+footer {
+  background: var(--primary);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+footer .footer-top div {
+  flex: 1 1 200px;
+}
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  margin: 8px 0;
+}
+footer .social-icons {
+  margin-bottom: 20px;
+}
+footer .social-icons img {
+  width: 32px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+footer .social-icons img:hover {
+  transform: scale(1.1);
+}
+footer p {
+  font-size: 14px;
+}
+
+/* ====================
+   Animação "Reveal"
+==================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====================
+   Subpáginas
+==================== */
+.subpage {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.subpage .carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.subpage .carousel-track {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.subpage .carousel-slide {
+  display: none;
+  height: 100%;
+}
+.subpage .carousel-slide.active {
+  display: block;
+}
+.subpage .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.subpage .carousel-button.prev {
+  left: 10px;
+}
+.subpage .carousel-button.next {
+  right: 10px;
+}
+.subpage .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cap {
+  margin-top: 20px;
+}
+.lor {
+  color: darkgray;
+  margin-top: 60px;
+  font-family: "Lato", sans-serif;
+}
+
+/* ====================
+   RESPONSIVIDADE
+==================== */
+
+/* Ajustes para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+  /* Ajuste dos elementos do header */
+  #eto,
+  #n {
+    margin-right: 0;
+    font-size: 1.5em;
+  }
+  nav ul {
+    padding-left: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #con {
+    margin: 10px auto;
+  }
+  /* Centraliza a imagem de perfil */
+  #eu {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+  /* Ajuste nos tamanhos dos textos */
+  #ja {
+    font-size: 2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  /* Carousel: aumenta a largura dos slides */
+  .carousel-slide {
+    min-width: 80%;
+  }
+  .carousel-button {
+    font-size: 1.8rem;
+    padding: 0 8px;
+  }
+  /* Timeline de experiência em 100% */
+  .experience-item {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+  .experience-timeline::before {
+    left: 20px;
+  }
+  .experience-item::before {
+    left: 12px !important;
+  }
+  /* Footer: itens em coluna */
+  footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Ajustes para telas com largura máxima de 480px */
+@media (max-width: 480px) {
+  #eto,
+  #n {
+    font-size: 1.2em;
+  }
+  #ja {
+    font-size: 1.8em;
+  }
+  nav ul a {
+    font-size: 1em;
+  }
+  section h2 {
+    font-size: 28px;
+  }
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+  .carousel-slide {
+    min-width: 100%;
+  }
+  .carousel-button {
+    font-size: 1.5rem;
+    padding: 0 6px;
+  }
+  .contact form {
+    padding: 0 10px;
+  }
+  .subpage {
+    width: 90%;
+    height: auto;
+  }
+}
+#menuIcon{
+    margin-left: 1400px;
+    width: 35px;
+    height: 35px; 
+    transform: translate(0%, -190%);
+}
+  /* Estilo do cursor personalizado */
+  .custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    width: 20px;           /* Tamanho base */
+    height: 20px;
+    background-color:  rgb(176, 41, 41);
+    border-radius: 50%;
+    transform: scale(0.6); /* 60% do tamanho base */
+    opacity: 1;            /* 100% visível */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    z-index: 9999;
+  }
+  /* Estado quando o mouse está sobre h1, p ou img */
+  .custom-cursor.hover {
+    transform: scale(1.2); /* 200% do tamanho padrão (0.6 * 2 = 1.2) */
+    opacity: 0.5;          /* 50% transparente */
+  }
+
+    /* Estilos do Sidebar */
+    body {
+      cursor: none;
+    }
+
+    
+    /* Estilos básicos */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    
+      
+    }
+    /* Botão de Toggle – posicionado no canto superior direito */
+    #toggleMenu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 10001;
+      width: 40px;
+      height: 40px;
+    }
+    #toggleMenu:focus {
+      outline: none;
+    }
+    /* O SVG ocupa todo o botão */
+    #toggleMenu .icon {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    /* Hamburger: definir transform-origin para centralizar a rotação */
+    #toggleMenu .hamburger rect {
+      transform-origin: center;
+      animation: none;
+      opacity: 1;
+      transition: opacity 0.4s ease 0.4s;
+    }
+    /* X extra: inicialmente oculto e com escala menor */
+    #toggleMenu .x-icon {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.4s ease 0.4s, transform 0.4s ease 0.4s;
+    }
+    
+    /* -------- Keyframes para transformar o hamburger em X -------- */
+    @keyframes toXRect1 {
+      0% { transform: translateY(0) rotate(0); }
+      100% { transform: translateY(8px) rotate(45deg); }
+    }
+    @keyframes toXRect2 {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    @keyframes toXRect3 {
+      0% { transform: translateY(0) rotate(0); }
+      100% { transform: translateY(-8px) rotate(-45deg); }
+    }
+    
+    /* -------- Keyframes para retornar de X para hamburger -------- */
+    @keyframes toHamburgerRect1 {
+      0% { transform: translateY(8px) rotate(45deg); }
+      100% { transform: translateY(0) rotate(0); }
+    }
+    @keyframes toHamburgerRect2 {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes toHamburgerRect3 {
+      0% { transform: translateY(-8px) rotate(-45deg); }
+      100% { transform: translateY(0) rotate(0); }
+    }
+    
+    /* Animação dos retângulos do hamburger quando aberto */
+    #toggleMenu.open .hamburger rect:nth-child(1) {
+      animation: toXRect1 0.4s forwards;
+    }
+    #toggleMenu.open .hamburger rect:nth-child(2) {
+      animation: toXRect2 0.4s forwards;
+    }
+    #toggleMenu.open .hamburger rect:nth-child(3) {
+      animation: toXRect3 0.4s forwards;
+    }
+    
+    /* Animação dos retângulos do hamburger quando fechado */
+    #toggleMenu:not(.open) .hamburger rect:nth-child(1) {
+      animation: toHamburgerRect1 0.4s forwards;
+    }
+    #toggleMenu:not(.open) .hamburger rect:nth-child(2) {
+      animation: toHamburgerRect2 0.4s forwards;
+    }
+    #toggleMenu:not(.open) .hamburger rect:nth-child(3) {
+      animation: toHamburgerRect3 0.4s forwards;
+    }
+    
+    /* Transição dos SVGs: quando aberto, o hamburger some e o X extra aparece */
+    #toggleMenu.open .hamburger {
+      opacity: 0;
+    }
+    #toggleMenu.open .x-icon {
+      opacity: 1;
+      transform: scale(1);
+    }
+    /* Quando não está aberto, o X extra fica oculto e em escala menor */
+    #toggleMenu:not(.open) .x-icon {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    
+    /* --------------------- Sidebar e animações --------------------- */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(184, 178, 178, 0.95);
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    #sidebar ul li {
+      margin: 20px 0;
+    }
+    #sidebar ul li a {
+      color: white;
+      font-size: 1.5em;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    /* Animação para “encher” o sidebar (efeito água subindo) */
+    @keyframes fillWater {
+      0% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+      }
+      100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+    /* Animação para “drenar” o sidebar (efeito água descendo) */
+    @keyframes drainWater {
+      0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      100% {
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+      }
+    }
+    /* Ao abrir, o sidebar é preenchido */
+    #sidebar.active {
+      animation: fillWater 0.5s forwards ease;
+    }
+    /* Ao fechar, ele é drenado */
+    #sidebar.active.closing {
+      animation: drainWater 0.5s forwards ease;
+    }
+  
+    /* Ícone SVG que ativa o sidebar */
+    #menuIcon {
+      cursor: pointer;
+    }
+    /* Estilos para o cursor customizado */
+    .custom-cursor {
+      position: fixed;
+      width: 25px;
+      height: 25px;
+      background-color: #FFC785; /* Cor desejada */
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: scale(0.6); /* 60% do tamanho base */
+      opacity: 1; /* 100% visível */
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    /* Quando o cursor estiver sobre h1, p ou img */
+    .custom-cursor.hover {
+      transform: scale(1.2); /* Aumentado em 200% em relação ao tamanho base */
+      opacity: 0.5; /* 50% transparente */
+    }

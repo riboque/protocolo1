@@ -1,0 +1,68 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site sobre a pap </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            border-color: #444;
+        }
+        .content {
+            margin-top: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Imagens da maquete </h2>
+           <img src="IMAGENS/cima.png" alt="cima" width="250" height="250" >
+
+            <img src="https://via.placeholder.com/200x150" alt="Imagem 2">
+            <img src="https://via.placeholder.com/200x150" alt="Imagem 3">
+        </section>
+        <section class="content">
+            <h2>Conteúdo</h2>
+            <p>
+                Este é um exemplo de texto para o conteúdo do site. Você pode adicionar mais
+                texto aqui, descrever suas imagens ou qualquer outra coisa que desejar!
+            </p>
+        </section>
+    </main>
+</body>
+</html>
