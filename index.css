@@ -21,24 +21,32 @@ body {
 /* ====================
    Header, Identidades e Navegação
 ==================== */
+#neto{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+}
 #eto {
   color: rgb(176, 41, 41);
   text-align: center;
   font-size: 2em;
-  margin-right: 1210px;
-  margin-top: 20.6px;
+
+ 
 font-family: "Grechen Fuemen";
-  transform: translate(15%, -20%);
+
 
 }
-
+#sd{
+  margin-left: -30px;
+  margin-top: 5px;
+}
 #n {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 2em;
-  margin-right: 1350px;
+
   font-family: "Grechen Fuemen";
-  transform: translate(100%, 130%);
+  
 }
 
 #con {
@@ -221,7 +229,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background: #1F2233;
+  background: var(--primary);
   padding: 40px 20px;
 }
 section h2 {
@@ -249,7 +257,7 @@ section h3 {
    Seção Sobre Mim
 ==================== */
 #about {
-  background: #1F2233;
+  background: var(--primary);
 }
 .about p {
   font-size: 20px;
@@ -266,7 +274,7 @@ section h3 {
   gap: 20px;
 }
 .skill {
-  background: #35394D;
+  background: var(--secondary);
   padding: 20px;
   border-radius: 8px;
   flex: 1 1 200px;
@@ -276,7 +284,6 @@ section h3 {
 .skill h3 {
   margin-bottom: 10px;
   font-size: 22px;
-   color:white;
 }
 
 /* ====================
@@ -294,13 +301,13 @@ section h3 {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #35394D;
+  background: var(--secondary);
 }
 .experience-item {
   position: relative;
   width: 45%;
   padding: 20px;
-  background:#35394D ;
+  background: var(--secondary);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   margin: 20px 0;
@@ -321,8 +328,8 @@ section h3 {
   top: 20px;
   width: 16px;
   height: 16px;
-  background: #1F2233;
-  border: 3px solid #F0F0F0;
+  background: var(--primary);
+  border: 3px solid var(--text-light);
   border-radius: 50%;
   z-index: 1;
 }
@@ -363,12 +370,12 @@ section h3 {
   margin-bottom: 20px;
   border: none;
   border-radius: 4px;
-  background: #35394D;
-  color: #F0F0F0;
+  background: var(--secondary);
+  color: var(--text-light);
 }
 .contact button {
-  background: #35394D;
-  color: #F0F0F0;
+  background: var(--secondary);
+  color: var(--text-light);
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -377,7 +384,7 @@ section h3 {
   font-size: 16px;
 }
 .contact button:hover {
-  background: #4B4F61;
+  background: var(--tertiary);
 }
 #contact {
   margin-top: 600px;
@@ -387,7 +394,7 @@ section h3 {
    Footer
 ==================== */
 footer {
-  background: #1F2233;
+  background: var(--primary);
   padding: 40px 20px;
   text-align: center;
   margin-top: 60px;
@@ -587,8 +594,13 @@ footer p {
 @media (max-width: 480px) {
   #eto,
   #n {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
+#neto{
+  margin-top: 60px;
+}
+#home{margin-top: -30px;}
+
   #ja {
     font-size: 1.8em;
   }
