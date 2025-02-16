@@ -221,7 +221,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background: var(--primary);
+  background: #1F2233;
   padding: 40px 20px;
 }
 section h2 {
@@ -386,7 +386,7 @@ section h3 {
    Footer
 ==================== */
 footer {
-  background: var(--primary);
+  background: #1F2233;
   padding: 40px 20px;
   text-align: center;
   margin-top: 60px;
