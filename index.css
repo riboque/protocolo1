@@ -654,7 +654,7 @@ section h3 {
 ==================== */
 
 /* Ajustes para telas com largura máxima de 768px */
-@media (max-width: 1168px) {
+@media (max-width: 1308px) {
   /* Ajuste dos elementos do header */
   #eto,
   #n {
