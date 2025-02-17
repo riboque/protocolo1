@@ -229,7 +229,7 @@ p {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background: var(--primary);
+  background: #1F2233;
   padding: 40px 20px;
 }
 section h2 {
@@ -257,7 +257,7 @@ section h3 {
    Seção Sobre Mim
 ==================== */
 #about {
-  background: var(--primary);
+  background: var(#1F2233);
 }
 .about p {
   font-size: 20px;
@@ -328,7 +328,7 @@ section h3 {
   top: 20px;
   width: 16px;
   height: 16px;
-  background: var(--primary);
+  background: var(#1F2233);
   border: 3px solid var(--text-light);
   border-radius: 50%;
   z-index: 1;
@@ -395,7 +395,7 @@ section h3 {
 ==================== */
 
 #footer2 {
-    background: var(--primary);
+    background: #1F2233;
     color: #fff;
     text-align: center;
     padding: 20px;
